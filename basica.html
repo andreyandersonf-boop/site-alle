@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Maquiagem Básica</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <button class="home-btn" onclick="window.location.href='index.html'">🏠</button>
+
+    <h2>Passo a passo - Maquiagem Básica</h2>
+    <div class="progress-bar"><div id="barra" class="progress"></div></div>
+    <div id="conteudo"></div>
+
+    <div id="iniciar-container">
+        <button onclick="iniciarTutorial(passosBasica)">Iniciar Tutorial</button>
+    </div>
+
+    <div id="botoes-container" class="botoes-passo" >
+        <button onclick="proximoPasso(passosBasica)">Próximo passo</button>
+        <button onclick="voltarPasso(passosBasica)">Voltar passo</button>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        const passosBasica = [
+            "<img src='img/limpeza.jpg' alt='Limpeza da pele'><p>1. Limpe bem a pele.</p>",
+            "<img src='img/base.jpg' alt='Aplicando base'><p>2. Aplique uma base leve.</p>",
+            "<img src='img/blush.jpg' alt='Blush rosado'><p>3. Passe um blush rosado.</p>",
+            "<img src='img/batom.jpg' alt='Batom nude'><p>4. Finalize com batom nude.</p>"
+        ];
+    </script>
+</body>
+</html>

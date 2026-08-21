@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Maquiagem para Eventos Diurnos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <button class="home-btn" onclick="window.location.href='index.html'">🏠</button>
+
+    <h2>Passo a passo - Eventos Diurnos</h2>
+    <div class="progress-bar"><div id="barra" class="progress"></div></div>
+    <div id="conteudo"></div>
+
+    <div id="iniciar-container">
+        <button onclick="iniciarTutorial(passosDiurno)">Iniciar Tutorial</button>
+    </div>
+
+    <div id="botoes-container" class="botoes-passo">
+        <button onclick="proximoPasso(passosDiurno)">Próximo passo</button>
+        <button onclick="voltarPasso(passosDiurno)">Voltar passo</button>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        const passosDiurno = [
+            "<img src='img/hidratante.jpg' alt='Aplicando hidratante'><p>1. Hidrate bem a pele para um aspecto saudável.</p>",
+            "<img src='img/protetor.jpg' alt='Protetor solar'><p>2. Aplique protetor solar para proteger contra o sol.</p>",
+            "<img src='img/bbcream.jpg' alt='BB Cream'><p>3. Use BB Cream para uniformizar sem pesar.</p>",
+            "<img src='img/sombra_clara.jpg' alt='Sombra clara'><p>4. Aplique sombra clara para um olhar leve.</p>",
+            "<img src='img/gloss.jpg' alt='Gloss rosado'><p>5. Finalize com gloss rosado para frescor.</p>"
+        ];
+    </script>
+</body>
+</html>

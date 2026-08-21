@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Maquiagem para Eventos Noturnos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <button class="home-btn" onclick="window.location.href='index.html'">🏠</button>
+
+    <h2>Passo a passo - Eventos Noturnos</h2>
+    <div class="progress-bar"><div id="barra" class="progress"></div></div>
+    <div id="conteudo"></div>
+
+    <div id="iniciar-container">
+        <button onclick="iniciarTutorial(passosNoturno)">Iniciar Tutorial</button>
+    </div>
+
+    <div id="botoes-container" class="botoes-passo">
+        <button onclick="proximoPasso(passosNoturno)">Próximo passo</button>
+        <button onclick="voltarPasso(passosNoturno)">Voltar passo</button>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        const passosNoturno = [
+            "<img src='img/primer.jpg' alt='Primer'><p>1. Aplique primer para fixar a maquiagem.</p>",
+            "<img src='img/base_cobertura.jpg' alt='Base de alta cobertura'><p>2. Use base de alta cobertura para uniformizar.</p>",
+            "<img src='img/sombra_escura.jpg' alt='Sombra escura'><p>3. Faça um olho esfumado com sombra escura.</p>",
+            "<img src='img/delineador.jpg' alt='Delineador'><p>4. Aplique delineador para destacar o olhar.</p>",
+            "<img src='img/batom_vermelho.jpg' alt='Batom vermelho'><p>5. Finalize com batom vermelho marcante.</p>"
+        ];
+    </script>
+</body>
+</html>
